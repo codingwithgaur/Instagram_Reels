@@ -1,0 +1,99 @@
+body{
+    margin:0%;
+    padding: 0%;
+    background-image: url(./newbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+.heading{
+    margin:3%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+.main{
+    color: white;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+ul{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+ul li {
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5em;
+    letter-spacing: 15px;
+    text-shadow: none;
+    animation: animate 1s infinite linear;
+}
+@keyframes animate {
+    0%{
+        color:orange;
+        text-shadow: none;
+    }
+    18%{
+        color:orange;
+        text-shadow: none;
+    }
+    20%{
+        color:green;
+        text-shadow: 0 0 7px green , 0 0 20px #fff ;
+    }
+
+    30%{
+        color:orange;
+        text-shadow: none;
+    }
+    35%{
+        color:green;
+        text-shadow: 0 0 7px green , 0 0 20px #fff ;
+    }
+
+    70%{
+        color:orange;
+        text-shadow: none;
+    }
+    85%{
+        color:green;
+        text-shadow: 0 0 7px green , 0 0 20px #fff ;
+    }
+    90%{
+        color:orange;
+        text-shadow: none;
+    }
+    100%{
+        color:orange;
+        text-shadow: none;
+    }
+
+}
+
+ul li :nth-child(1){
+    animation-delay: 2s;
+}
+
+ul li :nth-child(2){
+    animation-delay: 4s;
+}
+
+ul li :nth-child(3){
+    animation-delay: 6s;
+}    
+
+ul li :nth-child(4){
+    animation-delay: 1s;
+}
+
+ul li :nth-child(5){
+    animation-delay: 1.4s;
+}          
